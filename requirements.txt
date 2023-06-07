@@ -22,33 +22,7 @@ cryptography==37.0.4
 cycler==0.11.0
 dash==2.10.2
 
-dash-table==5.0.0
-dataclasses==0.8
 
-Deprecated==1.2.13
-deprecation==2.1.0
-
-dill==0.3.4
-Django==3.2.14
-django-annoying==0.10.6
-django-cors-headers==3.6.0
-django-debug-toolbar==3.2.1
-django-extensions==3.1.0
-django-filter==2.4.0
-django-model-utils==4.1.1
-django-ranged-fileresponse==0.1.2
-django-rest-swagger==2.2.0
-django-rq==2.5.1
-django-user-agents==0.4.0
-djangorestframework==3.13.1
-
-drf-dynamic-fields==0.3.0
-drf-flex-fields==0.9.5
-drf-generators==0.3.0
-drf-yasg==1.20.0
-emoji==2.0.0
-
-expiringdict==1.1.4
 
 Flask==2.0.3
 Flask-HTTPAuth==4.7.0
