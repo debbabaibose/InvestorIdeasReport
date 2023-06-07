@@ -1,25 +1,6 @@
 
 
-blinker==1.5
-boto==2.49.0
-boto3==1.16.63
-botocore==1.19.63
-boxing==0.1.4
-brotlipy==0.7.0
-bs4==0.0.1
-cachetools==5.2.0
-casparser==0.5.5
-casparser-isin==2022.6.19
 
-click==8.0.3
-
-commonmark==0.9.1
-contourpy==1.0.6
-
-coreapi==2.3.3
-coreschema==0.0.4
-cryptography==37.0.4
-cycler==0.11.0
 dash==2.10.2
 
 
