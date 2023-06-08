@@ -26,10 +26,6 @@ warnings.filterwarnings("ignore")
 report_options = st.sidebar.radio('Choose Report', ('Cost vs Portfolio value','Annualised ROI', 'Annualised ROI with Investment' , 'Compound Return' , 'User Buys on Every Report Date' , 'Daywise Absolute Return'))
 
 if report_options == 'Cost vs Portfolio value':
-    import streamlit as st
-    import pandas as pd
-    import plotly.graph_objects as go
-    
     # Read the data
     df = pd.read_csv('Annualised ROI/compound_return_s2f_31052023.csv')
     cumulative_investment = df['Investment'].tolist()
