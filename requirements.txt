@@ -4,5 +4,7 @@ dash==1.21.0
 dash-core-components==1.17.1
 dash-html-components==1.1.4
 streamlit==1.10.0
+matplotlib==3.4.3
+
 
 
