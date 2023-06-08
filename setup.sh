@@ -1,3 +1,5 @@
+export STREAMLIT_THEME="light"
+
 mkdir -p ~.streamlit
 echo [general]
 email = shreya@stockedge.com
