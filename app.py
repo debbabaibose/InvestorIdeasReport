@@ -31,7 +31,7 @@ if report_options == 'Cost vs Portfolio value':
     import plotly.graph_objects as go
     
     # Read the data
-    df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2f_31052023.csv')
+    df = pd.read_csv('/Annualised ROI/compound_return_s2f_31052023.csv')
     cumulative_investment = df['Investment'].tolist()
     final_graph_list1 = df['Gain_amount'].tolist()
     # Create traces
@@ -58,15 +58,15 @@ if report_options == 'Annualised ROI':
     mode = st.sidebar.radio('Choose Support mode', ('Support 2 from', 'Support 2 to', 'Support 1 from', 'Support 1 to'))
 
     if mode == 'Support 2 from':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2f_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_s2f_31052023.csv')
     if mode == 'Support 2 to':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2t_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_s2t_31052023.csv')
      
     if mode == 'Support 1 from':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s1f_31052023.csv')    
+        df = pd.read_csv('/Annualised ROI/compound_return_s1f_31052023.csv')    
      
     if mode == 'Support 1 to':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s1t_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_s1t_31052023.csv')
         
     fig = px.line(df, x='Date', y='Gain', labels={'x': 'Date', 'y': 'ROI'})
 
@@ -86,15 +86,15 @@ if report_options == 'Annualised ROI with Investment':
     
     if mode == 'Support 2 from':
         # Read the data
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2f_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_s2f_31052023.csv')
     if mode == 'Support 2 to':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2t_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_s2t_31052023.csv')
      
     if mode == 'Support 1 from':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s1f_31052023.csv')    
+        df = pd.read_csv('/Annualised ROI/compound_return_s1f_31052023.csv')    
      
     if mode == 'Support 1 to':
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s1t_31052023.csv')    
+        df = pd.read_csv('/Annualised ROI/compound_return_s1t_31052023.csv')    
         
         
     investment_list= df['DailyInvestment'].tolist()
@@ -129,19 +129,19 @@ if report_options == 'Compound Return':
         if mode == 'Support 2 from':
             
             # Read the data
-            df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2f_31052023.csv')
+            df = pd.read_csv('/Annualised ROI/compound_return_s2f_31052023.csv')
             
         if mode == 'Nifty50':
             # Read the data
-            df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_Nifty50_31_05_2023.csv')
+            df = pd.read_csv('/Annualised ROI/Compound_Return_Nifty50_31_05_2023.csv')
         
         if mode == 'NiftyMidCap50':
             # Read the data
-            df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_NiftyMidcap50_31_05_2023.csv')
+            df = pd.read_csv('/Annualised ROI/Compound_Return_NiftyMidcap50_31_05_2023.csv')
               
         if mode == 'NiftySmallCap50':
             # Read the data
-            df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_NiftySmallcap50_31_05_2023.csv')
+            df = pd.read_csv('/Annualised ROI/Compound_Return_NiftySmallcap50_31_05_2023.csv')
           
         
         
@@ -167,10 +167,10 @@ if report_options == 'Compound Return':
     
     if mode == 'Compare':
     # Read the data
-        df_s2f = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_s2f_31052023.csv')
-        df_nifty50 = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_Nifty50_31_05_2023.csv')
-        df_nifty_midcap50 = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_NiftyMidcap50_31_05_2023.csv')
-        df_nifty_smallcap50 = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/Compound_Return_NiftySmallcap50_31_05_2023.csv')
+        df_s2f = pd.read_csv('/Annualised ROI/compound_return_s2f_31052023.csv')
+        df_nifty50 = pd.read_csv('/Annualised ROI/Compound_Return_Nifty50_31_05_2023.csv')
+        df_nifty_midcap50 = pd.read_csv('/Annualised ROI/Compound_Return_NiftyMidcap50_31_05_2023.csv')
+        df_nifty_smallcap50 = pd.read_csv('/Annualised ROI/Compound_Return_NiftySmallcap50_31_05_2023.csv')
         
         # Set default options
         selected_options = ['Support 2 from','Nifty50']
@@ -229,7 +229,7 @@ if report_options == 'User Buys on Every Report Date':
     
     if mode == 'Annualised ROI':
         
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
         
         
         fig = px.line(df, x='Date', y='Gain', labels={'x': 'Date', 'y': 'ROI'})
@@ -247,7 +247,7 @@ if report_options == 'User Buys on Every Report Date':
         
     if mode == 'Annualised ROI with Investment':
         
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
         
         
         investment_list= df['DailyInvestment'].tolist()
@@ -277,7 +277,7 @@ if report_options == 'User Buys on Every Report Date':
         
     if mode == 'Compound Return':
         
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/compound_return_userbuysoneveryreportdate_31052023.csv')
         
         
         # Slice the DataFrame to select rows starting from index 140 onwards
@@ -307,7 +307,7 @@ if report_options == 'Daywise Absolute Return':
     
     if mode == 'Line Chart':
         
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/daywise_return_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/daywise_return_31052023.csv')
         
         
         # Create subplots and mention plot grid size
@@ -334,7 +334,7 @@ if report_options == 'Daywise Absolute Return':
         
     if mode == 'Bar Plot':
         
-        df = pd.read_csv('C:/Users/user-41305506/StreamlitProject - InvestorIdeas/Annualised ROI/daywise_return_31052023.csv')
+        df = pd.read_csv('/Annualised ROI/daywise_return_31052023.csv')
         
         
         high_low_final=df['high_low'].tolist()
