@@ -33,7 +33,7 @@ try:
         import plotly.graph_objects as go
         
         # Read the data
-        df = pd.read_csv('Annualised ROI/November01/compound_return_s2f.csv')
+        df = pd.read_csv('Annualised ROI/December04/compound_return_s2f.csv')
         cumulative_investment = df['Investment'].tolist()
         final_graph_list1 = df['Gain_amount'].tolist()
         # Create traces
@@ -60,15 +60,15 @@ try:
         mode = st.sidebar.radio('Choose Support mode', ('Support 2 from', 'Support 2 to', 'Support 1 from', 'Support 1 to'))
     
         if mode == 'Support 2 from':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s2f.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s2f.csv')
         if mode == 'Support 2 to':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s2t.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s2t.csv')
          
         if mode == 'Support 1 from':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s1f.csv')    
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s1f.csv')    
          
         if mode == 'Support 1 to':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s1t.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s1t.csv')
         
         # Apply CSS styling to position the buttons in the top-right corner
         # Add CSS styling to adjust the button positioning
@@ -126,15 +126,15 @@ try:
         
         if mode == 'Support 2 from':
             # Read the data
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s2f.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s2f.csv')
         if mode == 'Support 2 to':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s2t.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s2t.csv')
          
         if mode == 'Support 1 from':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s1f.csv')    
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s1f.csv')    
          
         if mode == 'Support 1 to':
-            df = pd.read_csv('Annualised ROI/November01/compound_return_s1t.csv')    
+            df = pd.read_csv('Annualised ROI/December04/compound_return_s1t.csv')    
             
             
         investment_list= df['DailyInvestment'].tolist()
@@ -207,19 +207,19 @@ try:
             if mode == 'Support 2 from':
                 
                 # Read the data
-                df = pd.read_csv('Annualised ROI/November01/compound_return_s2f.csv')
+                df = pd.read_csv('Annualised ROI/December04/compound_return_s2f.csv')
                 
             if mode == 'Nifty50':
                 # Read the data
-                df = pd.read_csv('Annualised ROI/November01/Compound_Return_Nifty50.csv')
+                df = pd.read_csv('Annualised ROI/December04/Compound_Return_Nifty50.csv')
             
             if mode == 'NiftyMidCap50':
                 # Read the data
-                df = pd.read_csv('Annualised ROI/November01/Compound_Return_NiftyMidcap50.csv')
+                df = pd.read_csv('Annualised ROI/December04/Compound_Return_NiftyMidcap50.csv')
                   
             if mode == 'NiftySmallCap50':
                 # Read the data
-                df = pd.read_csv('Annualised ROI/November01/Compound_Return_NiftySmallcap50.csv')
+                df = pd.read_csv('Annualised ROI/December04/Compound_Return_NiftySmallcap50.csv')
               
             
             
@@ -279,10 +279,10 @@ try:
         
         if mode == 'Compare':
         # Read the data
-            df_s2f = pd.read_csv('Annualised ROI/November01/compound_return_s2f.csv')
-            df_nifty50 = pd.read_csv('Annualised ROI/November01/Compound_Return_Nifty50.csv')
-            df_nifty_midcap50 = pd.read_csv('Annualised ROI/November01/Compound_Return_NiftyMidcap50.csv')
-            df_nifty_smallcap50 = pd.read_csv('Annualised ROI/November01/Compound_Return_NiftySmallcap50.csv')
+            df_s2f = pd.read_csv('Annualised ROI/December04/compound_return_s2f.csv')
+            df_nifty50 = pd.read_csv('Annualised ROI/December04/Compound_Return_Nifty50.csv')
+            df_nifty_midcap50 = pd.read_csv('Annualised ROI/December04/Compound_Return_NiftyMidcap50.csv')
+            df_nifty_smallcap50 = pd.read_csv('Annualised ROI/December04/Compound_Return_NiftySmallcap50.csv')
             
             # Set default options
             selected_options = ['Support 2 from','Nifty50']
@@ -341,7 +341,7 @@ try:
         
         if mode == 'Annualised ROI':
             
-            df = pd.read_csv('Annualised ROI/November01/compound_return_userbuysoneveryreportdate.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_userbuysoneveryreportdate.csv')
             
             
             fig = px.line(df, x='Date', y='Gain', labels={'x': 'Date', 'y': 'ROI'})
@@ -393,7 +393,7 @@ try:
             
         if mode == 'Annualised ROI with Investment':
             
-            df = pd.read_csv('Annualised ROI/November01/compound_return_userbuysoneveryreportdate.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_userbuysoneveryreportdate.csv')
             
             
             investment_list= df['DailyInvestment'].tolist()
@@ -457,7 +457,7 @@ try:
             
         if mode == 'Compound Return':
             
-            df = pd.read_csv('Annualised ROI/November01/compound_return_userbuysoneveryreportdate.csv')
+            df = pd.read_csv('Annualised ROI/December04/compound_return_userbuysoneveryreportdate.csv')
             
             
             # Slice the DataFrame to select rows starting from index 140 onwards
@@ -521,7 +521,7 @@ try:
         
         if mode == 'Line Chart':
             
-            df = pd.read_csv('Annualised ROI/November01/daywise_return.csv')
+            df = pd.read_csv('Annualised ROI/December04/daywise_return.csv')
             
             
             # Create subplots and mention plot grid size
@@ -583,7 +583,7 @@ try:
             
         if mode == 'Bar Plot':
             
-            df = pd.read_csv('Annualised ROI/November01/daywise_return.csv')
+            df = pd.read_csv('Annualised ROI/December04/daywise_return.csv')
             
             
             high_low_final=df['high_low'].tolist()
