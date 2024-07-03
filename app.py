@@ -21,7 +21,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-
+print("code working")
 # Read the data based on selected option
 report_options = st.sidebar.radio('Choose Report', ('Cost vs Portfolio value','Annualised ROI', 'Annualised ROI with Investment' , 'Compound Return' , 'User Buys on Every Report Date' , 'Daywise Absolute Return'))
 
